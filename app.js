@@ -1409,11 +1409,13 @@ function calculateResults() {
     if (answerIndex !== undefined) {
       const selectedOption = question.options[answerIndex];
       Object.keys(selectedOption.scores).forEach(methodology => {
+        if (!quizScores[methodology]) return;               // skip unknown keys
         quizScores[methodology].score += selectedOption.scores[methodology];
-        quizScores[methodology].maxScore += 3; // Max score per question
+        quizScores[methodology].maxScore += 3;              // max per question
       });
     }
-  });
+});
+
   
   // Calculate percentages and sort
   const results = Object.keys(quizScores).map(name => {
