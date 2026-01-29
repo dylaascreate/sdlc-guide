@@ -280,34 +280,6 @@ const methodologies = {
       "Rapidly changing requirements"
     ]
   },
-  Prototype: {
-    description: "A methodology where developers create working models to validate concepts and gather user feedback before full development begins.",
-    structure: "Iterative/Model-based",
-    flexibility: "Very High",
-    best_for: "Unclear requirements, UI-centric",
-    team_size: "Small to Medium",
-    documentation: "Moderate",
-    icon: "🎨",
-    phases: ["Requirements gathering", "Quick design", "Build prototype", "User evaluation", "Refine or start full development"],
-    advantages: [
-      "Early user feedback and involvement",
-      "Validates concepts before major investment",
-      "Identifies missing requirements early",
-      "Reduces risk of building wrong product"
-    ],
-    disadvantages: [
-      "Users may mistake prototype for final",
-      "May lead to insufficient analysis",
-      "Can result in poor documentation",
-      "Risk of incomplete specifications"
-    ],
-    use_when: [
-      "Requirements are unclear",
-      "Need to demonstrate feasibility",
-      "User interface is critical",
-      "High risk of misunderstanding"
-    ]
-  },
   "Staged Delivery": {
     description: "An incremental approach that delivers software in carefully planned stages, with each stage providing a complete, functional subset of the system.",
     structure: "Sequential stages/Incremental",
@@ -399,7 +371,6 @@ const methodologies = {
       "You want explicit testing in all phases"
     ]
   },
-
   "Throwaway Prototyping": {
     description: "A prototyping approach where quick, disposable prototypes are built only to clarify requirements, then discarded before building the actual system.",
     structure: "Iterative/Exploratory",
